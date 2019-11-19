@@ -1,4 +1,4 @@
-<h2>Create your new article</h2>
+<h2>Edit the field below</h2>
 
 <%= form_for(@article) do |f| %>
 <div class="form-group">
@@ -10,10 +10,9 @@
   <%= f.text_field :content %>
 </div>
 <div class="form-group">
-  <%= f.submit %>
+  <%= f.submit "update article" %>
 </div>
 
 <% end %>
 
-<%= link_to "back to home page", articles_path %>
-
+<p><%= link_to "back to home page", articles_path %> or <%= link_to "back to hshow", article_path(@article.id) %></p>
