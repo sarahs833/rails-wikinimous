@@ -1,0 +1,17 @@
+<h2>Create your new article</h2>
+
+<%= form_for(@article) do |f| %>
+<div class="form-group">
+  <%= f.label :title%>
+  <%= f.text_field :title%>
+</div>
+<div class="form-group">
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+</div>
+<div class="form-group">
+  <%= f.submit %>
+</div>
+
+<% end %>
+
